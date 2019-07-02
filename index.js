@@ -7,7 +7,7 @@ function main() {
         let names = [];
         
         console.time('regular for');
-        for(i = 0; i < results.length - 1; i++){ // DUDU - GDSS
+        for(i = 0; i < results.length - 1; i++){
             const character = results[i];
             names.push(character.name);
         }
@@ -24,14 +24,14 @@ function main() {
 
         names = [];
 
-        console.time('foreach'); //JHON - JVOA
+        console.time('foreach');
         results.forEach(character => {
             names.push(character.name);
         });
         console.timeEnd('foreach');
 
         names = [];
-        
+
         console.time('forof')
         for (const character of results) {
             names.push(character.name);
